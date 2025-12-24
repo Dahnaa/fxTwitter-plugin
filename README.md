@@ -5,6 +5,8 @@ Made this because it was hella annoying to type out FX everytime I wanna send a 
 
 > ## Disclaimer
 > This Plugin isn't offically supported by vencord.
+> 
+![Logo](https://i.imgur.com/M9qy47B.png)
 
 ## Authors
 
@@ -13,5 +15,4 @@ Made this because it was hella annoying to type out FX everytime I wanna send a 
 
 [![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://opensource.org/licenses/)
 
-![Logo](https://i.imgur.com/M9qy47B.png)
 
