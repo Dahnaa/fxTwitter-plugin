@@ -81,7 +81,6 @@ const FXIcon: IconComponent = ({ height = 20, width = 20, className }) => {
     );
 };
 
-
 const FXButton: ChatBarButtonFactory = ({ isMainChat }) => {
     const { mode, showIcon } = settings.use(["mode", "showIcon"]);
 
