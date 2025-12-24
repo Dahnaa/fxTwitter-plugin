@@ -16,7 +16,7 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 
-import { useState } from "@webpack/common";
+import { showNotification } from "@api/Notifications";
 import { MessageObject } from "@api/MessageEvents";
 import { ChatBarButton, ChatBarButtonFactory } from "@api/ChatButtons";
 import { definePluginSettings } from "@api/Settings";
@@ -26,6 +26,10 @@ type FXMode = "none" | "domain" | "gallery" | "text";
 
 const MODES: FXMode[] = ["none", "domain", "gallery", "text"];
 const MODE_PREFIX: Record<FXMode, string> = { none: "", domain: "d.", gallery: "g.", text: "t." };
+const VERSION = "1.0.0";
+const UPDATE_URL = "https://github.com/Dahnaa/fxTwitter-plugin";
+
+let notified = false;
 
 const settings = definePluginSettings({
     showIcon: {
@@ -36,9 +40,20 @@ const settings = definePluginSettings({
     mode: {
         type: OptionType.SELECT,
         description: "Mode used for the FXTwitter links: None, Domain, Gallery, Text.",
-        options: MODES.map(m => ({ label: m.charAt(0).toUpperCase() + m.slice(1), value: m, default: m === "none" })),
+        options: MODES.map(m => ({
+            label: m.charAt(0).toUpperCase() + m.slice(1),
+            value: m,
+            default: m === "none"
+        })),
+    },
+    version: {
+        type: OptionType.STRING,
+        default: VERSION,
+        description: "Installed plugin version",
+        disabled: true
     }
 });
+
 
 const FXIcon: IconComponent = ({ height = 20, width = 20, className }) => {
     const { mode } = settings.use(["mode"]);
@@ -100,8 +115,20 @@ function cleanMessage(msg: MessageObject) {
 export default definePlugin({
     name: "FXTwitter",
     description: "Automatically rewrites Twitter/X links into FXTwitter links with toggleable modes.",
-    authors: [{ name: "@Dahnaa, Dona", id: 821451701331820615n }],
+    authors: [{ name: "@dahnaa, Dona", id: 821451701331820615n }],
     settings,
+
+    start() {
+        if (notified) return;
+        notified = true;
+
+        showNotification({
+            title: "FXTwitter",
+            body: "Click to open the GitHub repository for updates.",
+            color: "#1da1f2",
+            onClick: () => window.open(UPDATE_URL)
+        });
+    },
 
     chatBarButton: {
         icon: FXIcon,
