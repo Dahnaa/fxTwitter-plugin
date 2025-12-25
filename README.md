@@ -36,8 +36,8 @@ Excludes photos and videos, showing only the post’s text.
 
 ## References
 
-[![FxEmbed](https://img.shields.io/badge/Powered%20by-FXTwitter-1da1f2.svg)](https://github.com/FixTweet/FxTwitter)
-[![Vencord](https://img.shields.io/badge/Powered%20by-FXTwitter-1da1f2.svg)](https://github.com/Vendicated/Vencord)
+[![FxEmbed](https://img.shields.io/badge/Powered%20by-FxEmbed-1da1f2.svg)](https://github.com/FixTweet/FxTwitter)
+[![Vencord](https://img.shields.io/badge/Powered%20by-Vencord-1da1f2.svg)](https://github.com/Vendicated/Vencord)
 
 ---
 
