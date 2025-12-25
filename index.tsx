@@ -27,7 +27,7 @@ let notified = false;
 
 const MODES: FXMode[] = ["none", "domain", "gallery", "text"];
 const MODE_PREFIX: Record<FXMode, string> = { none: "", domain: "d.", gallery: "g.", text: "t." };
-const VERSION = "1.0.0";
+const VERSION = "1.1.0";
 const UPDATE_URL = "https://github.com/Dahnaa/fxTwitter-plugin";
 const TWITTER_REGEX = /https?:\/\/(?:www\.)?(?:twitter|x)\.com\/\S+/gi;
 
