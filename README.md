@@ -1,9 +1,10 @@
 # FXTwitter
 
-A custom **Vencord plugin** that automatically rewrites Twitter/X links into *fxtwitter* links with toggleable preview modes.
+A custom **Vencord plugin** that automatically rewrites Twitter/X links into *fxtwitter* links with toggleable preview modes.  
 I made this because typing `fxtwitter.com` every single time was annoying, so I lowkey made an entire plugin to do it for me 😭
 
 ![Logo](https://i.imgur.com/M9qy47B.png)
+
 ---
 
 ## 👀 Features / Settings
@@ -13,30 +14,22 @@ I made this because typing `fxtwitter.com` every single time was annoying, so I 
 - Startup notification linking to the repository
 
 ---
+
 ## 🔗 Modes
 
 ### **Normal**
-Uses the standard `fxtwitter.com` embed.  
-
----
+Uses the standard `fxtwitter.com` embed.
 
 ### **Domain**  
 `d.fxtwitter.com`  
-
 Directly links a post’s media without the full embed.
-
----
 
 ### **Gallery**  
 `g.fxtwitter.com`  
-
 Generate minimal embeds with just the post's media and author information without other distractions.
-
----
 
 ### **Text**  
 `t.fxtwitter.com`  
-
 Excludes photos and videos, showing only the post’s text.
 
 ---
@@ -63,6 +56,6 @@ Excludes photos and videos, showing only the post’s text.
 
 ---
 
-## 📜 License
 
-This project is licensed under the **GPL-3.0 License**.
+[![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://opensource.org/licenses/)
+
