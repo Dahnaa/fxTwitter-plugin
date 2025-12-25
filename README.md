@@ -6,35 +6,35 @@ I made this because typing `fxtwitter.com` every single time was annoying, so I 
 
 ---
 
-### 👀 Features / Settings
+## 👀 Features / Settings
 
 - Automatically converts `twitter.com` / `x.com` links to `fxtwitter.com`
 - Chat bar icon that toggles between modes
 - Startup notification linking to the repository
 
 ---
-### 🔗 Modes
+## 🔗 Modes
 
-#### **Normal**
+# **Normal**
 Uses the standard `fxtwitter.com` embed.  
 
 ---
 
-#### **Domain**  
+### **Domain**  
 `d.fxtwitter.com`  
 
 Directly links a post’s media without the full embed.
 
 ---
 
-#### **Gallery**  
+### **Gallery**  
 `g.fxtwitter.com`  
 
 Generate minimal embeds with just the post's media and author information without other distractions.
 
 ---
 
-#### **Text**  
+### **Text**  
 `t.fxtwitter.com`  
 
 Excludes photos and videos, showing only the post’s text.
